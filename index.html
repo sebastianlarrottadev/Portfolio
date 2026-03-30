@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> Sebastian Larrotta C. | Ingeniero en Multimedia </title>
+
+    <!-- Metaetiquetas Primarias -->
+    <meta name="title" content="Sebastian Larrotta C. Ingeniería en Multimedia" />
+    <meta name="description" content="HTML | CSS | Sass | Git | JavaScript | Bootstrap | React | MaterialUI" />
+
+    <meta property="og:description" content="HTML | CSS | Sass | Git | JavaScript | Bootstrap | React | MaterialUI" />
+    <!-- Bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+
+    <!-- Tipografía -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet" />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="assets/uno.png" type="image/x-icon" />
+
+    <script src="main.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <!-- navegación -->
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <div class="container-fluid">
+                <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Alternar navegación">
+                    <i class="fas fa-bars"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav mx-auto text-center gap-3">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#home">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">Sobre mí</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#tech">Habilidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#projects">Proyectos</a>
+                        </li>
+                        <li>
+                            <!-- Alternador de tema oscuro -->
+                            <button id="theme-toggle" type="button" class="theme-toggler" aria-label="Cambiar modo">
+                                <i class="fas fa-moon d-block-light d-none theme-toggler__icon"></i>
+                                <i class="fas fa-sun d-block-dark d-none theme-toggler__icon"></i>
+                            </button>
+                            <!-- Fin alternador de tema oscuro -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <!-- fin navegación -->
+
+        <div id="home" class="hero">
+            <div class="hero__container">
+                <div class="hero__text">
+                    <h1 class="hero__title">Sebastian Larrotta C.</h1>
+                    <h2 class="hero__subtitle">Ingeniero en Multimedia</h2>
+                    <!-- Iconos del héroe -->
+                    <div class="hero__icons">
+                        <a class="hero__link" aria-label="Enlace a Github"
+                            href="https://github.com/sebastianlarrottadev" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github github"></i>
+                        </a>
+
+                        <a class="hero__link" aria-label="Enlace a Linkedin"
+                            href="https://www.linkedin.com/in/juan-sebasti%C3%A1n-larrotta-carre%C3%B1o-790783308?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbGBTS0%2FYQbqpMdZqZznTMg%3D%3D"
+                            target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin-in linkedin"></i>
+                        </a>
+                        <!-- descargar currículum -->
+                        <a href="assets/CV-Sebastian _Larrotta.pdf" download class="cv_btn">
+                            <i class="fas fa-download"></i>
+                            Descargar CV
+                        </a>
+                    </div>
+                </div>
+
+
+            </div>
+            <a href="#main" class="hero__icon--down" aria-label="Ir a la siguiente sección"><i
+                    class="fas fa-chevron-down"> </i>
+            </a>
+        </div>
+    </header>
+    <div class="gradient-bg">
+        <main id="main" class="main__container">
+            <section id="about" class="sec-container">
+                <img class="about__avatar" src="assets/perfil.jpeg" alt="Imagen de perfil" />
+                <div class="about__info">
+                    <div class="about__container">
+                        <h2 class="section__title">Sobre mí</h2>
+
+                        <span class="details__item"><i class="fas fa-map-marker-alt about__icon"></i>Colombia</span>
+                        <div class="about__details">
+                            <a class="details__item" target="_blank"
+                                href="mailto:juansebastianlarrotta.dev@gmail.com"><i
+                                    class="fas fa-envelope about__icon"></i>juansebastianlarrotta.dev@gmail.com</a>
+                            <a class="details__item" target="_blank" rel="noopener noreferrer"
+                                href="https://github.com/sebastianlarrottadev"><i
+                                    class="fab fa-github about__icon"></i>sebastianlarrottadev</a>
+                            <a class="details__item" target="_blank"
+                                rel="noopener noreferrer"
+                                href="https://www.linkedin.com/in/juan-sebasti%C3%A1n-larrotta-carre%C3%B1o-790783308?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BjHmLHOJHR7uP9FBabNSdIw%3D%3D"><i
+                                    class="fab fa-linkedin about__icon"></i>in/Juan Sebastian Larrotta C.</a>
+                        </div>
+
+                        <p class="about__text">
+                            <b> Ingeniero en Multimedia</b> con interés en la programación
+                            y el desarrollo de soluciones digitales. Tengo formación
+                            certificada en bases de datos, diseño UX/UI y desarrollo
+                            front-end. Integro diseño, funcionalidad y experiencia de
+                            usuario. Me destaco por el aprendizaje continuo, la
+                            adaptación a nuevas tecnologías y el interés constante
+                            en áreas en tendencia. Aporto soluciones eficientes y
+                            bien estructuradas.
+                        </p>
+                        <p class="about__text">
+                            Me interesa escribir código limpio, estructurado y optimizado, priorizando siempre
+                            soluciones sostenibles y escalables.
+                        </p>
+
+                        <p class="about__text">
+                            La programación ha despertado en mí un profundo interés por la resolución de problemas y la
+                            mejora continua de mis habilidades. Considero cada proyecto como una oportunidad para
+                            aprender, experimentar y crecer profesionalmente en el campo del desarrollo web.
+                        </p>
+                    </div>
+
+                    <!-- formación -->
+                    <div class="educ">
+                        <h2 class="section__title">Formación</h2>
+                        <div class="educ__item">
+                            <img src="assets/universidad-logo.png" width="60px" height="50px"
+                                alt="Logotipo Desafío Latam" />
+                            <div class="educ__item__text">
+                                <h3 class="educ__title">Universidad Militar
+                                    Nueva Granada
+                                </h3>
+                                <ul>
+                                    <li>
+                                        2023 - actual
+                                        <br />
+                                        <i class="fas fa-caret-right"></i>
+                                        Ingeniería en Multimedia
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="educ__item">
+                            <img src="assets/platzi-logo.png" width="60px" height="60px" alt="Logotipo Platzi" />
+                            <div class="educ__item__text">
+                                <h3 class="educ__title">Platzi</h3>
+                                <ul>
+                                    <li>
+                                        2025 - actual
+                                        <br />
+                                        <i class="fas fa-caret-right"></i> Desarrollo
+                                        Fullstack
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- elemento de formación -->
+
+
+                        <!-- elemento de formación -->
+                        <div class="educ__item d-flex">
+                            <img src="assets/platzi-logo.png" width="60px" height="60px" alt="Logotipo DuocUC" />
+                            <div class="educ__item__text">
+                                <h3 class="educ__title">Platzi</h3>
+                                <ul>
+                                    <li>
+                                        2025 - actual
+                                        <br />
+                                        <i class="fas fa-caret-right"></i>
+                                        Diseño De Interfaces UX/UI
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <a class="educ__btn" target="_blank" rel="noopener noreferrer"
+                            href="https://drive.google.com/drive/folders/1-0W_q3vcwwoms1OWBP0gADqEF2GyQDPf?usp=sharing">
+                            Ver certificados
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Stack tecnológico -->
+            <section id="tech" class="tech sec-container">
+                <h2 class="section__title">Tecnologías</h2>
+                <div class="tech__list">
+                    <div class="tech__stack">
+                        <img src="./assets/logo-html.webp" alt="Logotipo de HTML" />
+                        <span>HTML</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-css.svg" alt="Logotipo de CSS" />
+                        <span>CSS</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-javascript.png" alt="Logotipo de JavaScript" />
+                        <span>JavaScript</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-bootstrap.png" alt="Logotipo de Bootstrap" />
+                        <span>Bootstrap</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-react.png" alt="Logotipo de ReactJS" />
+                        <span>React</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/node.png" alt="Logotipo de Node.js" />
+                        <span>Node.js</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/express.png" alt="Logotipo de Express.js" />
+                        <span>Express.js</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/three.png" alt="Logotipo de Three.js" />
+                        <span>Three.js</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/c++.png" alt="Logotipo de C++" />
+                        <span>C++</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/sql.png" alt="Logotipo de SQL" />
+                        <span>SQL</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-python.png" alt="Logotipo de python" />
+                        <span>Python</span>
+                    </div>
+                </div>
+                <h2 class="section__title">Herramientas</h2>
+                <div class="tech__list">
+                    <div class="tech__stack">
+                        <img src="./assets/github-logo.png" alt="Logotipo de Github" />
+                        <span>Github</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-figma.png" alt="Logotipo de Netlify" />
+                        <span>Figma</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-illustrator.png" alt="Logotipo de Adobe Illustrator" />
+                        <span>Illustrator</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-photoshop.png" alt="Logotipo de Adobe Photoshop" />
+                        <span>Photoshop</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/logo-viusal.png" alt="Logotipo de VSC" />
+                        <span>VSC</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/powerbi.png" alt="Logotipo de Power BI" />
+                        <span>Power BI</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/unity.png" alt="Logotipo de Unity" />
+                        <span>Unity</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/access.png" alt="Logotipo de Access" />
+                        <span>Access</span>
+                    </div>
+                    <div class="tech__stack">
+                        <img src="./assets/workbench.png" alt="Logotipo de Workbench" />
+                        <span>Workbench</span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- trabajos -->
+            <section id="projects" class="projects">
+                <h2 class="section__title">Proyectos</h2>
+                <div class="projects__container">
+                    <!-- 1 -->
+                    <div class="card">
+                        <img class="card__img" src="assets/Brain Brokers.PNG"
+                            alt="Brain Brokers - Juego híbrido con Realidad Aumentada" />
+                        <div class="card__body">
+                            <h3>Brain Brokers</h3>
+                            <p class="card__text">
+                                Juego híbrido que combina tablero físico, cartas, animaciones 3D y realidad aumentada.
+                                Me encargué de toda la arquitectura multi-usuario en tiempo real con Socket.io, el
+                                desarrollo
+                                completo del backend (Node.js, Express.js) y la programación frontend (Three.js,
+                                AR.Frame, HTML/CSS/JS).
+                                Implementé la sincronización de estado entre múltiples jugadores, sistema de salas,
+                                gestión de recursos (dinero y salud mental) y la integración de la ruleta en AR.
+                            </p>
+                            <div class="card__tech">
+                                <span class="card__chip">Node.js</span>
+                                <span class="card__chip">Socket.io</span>
+                                <span class="card__chip">Express.js</span>
+                                <span class="card__chip">Three.js</span>
+                                <span class="card__chip">AR.Frame</span>
+                                <span class="card__chip">JavaScript</span>
+                                <span class="card__chip">HTML/CSS</span>
+                                <span class="card__chip">Web Storage API</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 1 -->
+                    <div class="card">
+                        <img class="card__img" src="assets/pro1.jpeg" alt="pagina web" />
+                        <div class="card__body">
+                            <h3>Emprendimiento</h3>
+                            <p class="card__text">
+                                Sitio web desarrollado para un emprendimiento de tableros en acrílico. Me encargué del
+                                diseño y programación de la plataforma, integrando visualizaciones 3D interactivas
+                                utilizando la librería Three.js. También modelé los productos en Autodesk Maya para su
+                                visualización web.
+                            </p>
+                            <div class="card__tech">
+                                <span class="card__chip"> HTML </span>
+                                <span class="card__chip"> CSS </span>
+                                <span class="card__chip"> JavaScript </span>
+                                <span class="card__chip"> Autodesk Maya </span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- 2 -->
+                    <div class="card">
+                        <img class="card__img" src="assets/Comic.jpg" alt="Tatami App" />
+                        <div class="card__body">
+                            <h3>Sombras en la web </h3>
+                            <p class="card__text">
+                                Proyecto de narrativa visual donde realicé el diseño, modelado y rigging de personajes
+                                en 3D usando Autodesk Maya. Los renders fueron generados con Arnold Renderer y se
+                                complementaron con diseño gráfico en Illustrator. El resultado fue un cómic digital con
+                                enfoque cinematográfico.
+                            </p>
+                            <div class="card__tech">
+                                <span class="card__chip">Illustrator</span>
+                                <span class="card__chip"> Autodesk Maya </span>
+                            </div>
+                            <div class="p-buttons">
+                                <a href="assets/Comic.pdf" download class="cv_btn">
+                                    <i class="fas fa-download"></i>
+                                    Descargar Comic
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- 3 -->
+
+                    <div class="card">
+                        <img class="card__img" src="assets/Dataset.jpg" alt="Shopi Ecommerce" />
+                        <div class="card__body">
+                            <h3>Resumidor de noticias</h3>
+                            <p class="card__text">
+                                Aplicación construida en Google Colab para procesar y resumir noticias mediante
+                                inteligencia artificial. Entrené y evalué modelos sobre un dataset de más de 200,000
+                                artículos utilizando TensorFlow. Además, diseñé una interfaz funcional en Gradio para
+                                facilitar su uso.
+                            </p>
+                            <div class="card__tech">
+                                <span class="card__chip"> Python</span>
+                                <span class="card__chip"> Gradio </span>
+                                <span class="card__chip"> TensorFlow </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 4 -->
+
+                    <div class="card">
+                        <img class="card__img" src="assets/mapa.png" alt="Mamma mia Pizzas" />
+                        <div class="card__body">
+                            <h3>Rutas por Colombia</h3>
+                            <p class="card__text">
+                                Aplicación web interactiva que visualiza rutas dentro del territorio colombiano
+                                aplicando algoritmos de búsqueda heurística como Voraz y A*. Se utilizó la API de
+                                OpenStreetMap junto con tecnologías web como HTML, CSS y JavaScript.
+                            </p>
+                            <div class="card__tech">
+                                <span class="card__chip"> HTML</span>
+                                <span class="card__chip"> CSS </span>
+                                <span class="card__chip"> JavaScript </span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 5 -->
+                    <div class="card">
+                        <img class="card__img" src="assets/MCTS.png" alt="Github Profile App" />
+                        <div class="card__body">
+                            <h3>Montecarlo Tree Search</h3>
+                            <p class="card__text">
+                                Desarrollo de un videojuego de golf en Unity, implementando una inteligencia artificial
+                                basada en el algoritmo Monte Carlo Tree Search (MCTS). El sistema evalúa múltiples
+                                trayectorias posibles en tiempo real para optimizar cada disparo, ofreciendo una
+                                experiencia dinámica y estratégica.
+                            </p>
+                            <div class="card__tech">
+                                <span class="card__chip"> C# </span>
+                                <span class="card__chip"> Illustrator </span>
+                                <span class="card__chip"> Unity </span>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- tarjeta 3 -->
+
+                    <div class="card">
+                        <img class="card__img" src="assets/tipsy.png" alt="Conversor de Divisas" />
+                        <div class="card__body">
+                            <h3>Tipsy</h3>
+                            <p class="card__text">
+                                Diseño y desarrollo de una plataforma web para estudiantes, con funcionalidades como
+                                registro, inicio de sesión y gestión de formularios almacenados en MySQL. La interfaz
+                                fue prototipada en Figma y programada con tecnologías web (HTML, CSS, JavaScript).
+                            </p>
+                            <div class="card__tech">
+                                <span class="card__chip"> Figma </span>
+                                <span class="card__chip"> HTML </span>
+
+                                <span class="card__chip"> CSS </span>
+
+                                <span class="card__chip"> JavaScript </span>
+                                <span class="card__chip"> MySQL </span>
+                            </div>
+                        </div>
+                    </div>
+            </section>
+
+            <section id="assistant" class="assistant sec-container">
+                <h2 class="section__title">Asistente sobre Sebastián</h2>
+                <p class="assistant__intro">
+                    Haz una pregunta rápida sobre mi perfil profesional y te responderé al instante.
+                </p>
+                <div class="assistant__suggestions" aria-label="Preguntas sugeridas">
+                    <button class="assistant__chip" type="button" data-question="perfil">
+                        ¿Quién es Sebastián?
+                    </button>
+                    <button class="assistant__chip" type="button" data-question="tecnologias">
+                        ¿Qué tecnologías maneja?
+                    </button>
+                    <button class="assistant__chip" type="button" data-question="proyectos">
+                        ¿Qué proyectos ha desarrollado?
+                    </button>
+                    <button class="assistant__chip" type="button" data-question="certificados">
+                        ¿Dónde veo sus certificados?
+                    </button>
+                    <button class="assistant__chip" type="button" data-question="contacto">
+                        ¿Cómo puedo contactarlo?
+                    </button>
+                </div>
+                <div class="assistant__panel" aria-live="polite">
+                    <p class="assistant__question" id="assistant-question">Selecciona una pregunta para empezar.</p>
+                    <p class="assistant__answer" id="assistant-answer">
+                        Puedo contarte sobre mi perfil, tecnologías, proyectos, certificados y formas de contacto.
+                    </p>
+                </div>
+                <div class="assistant__actions">
+                    <a class="educ__btn" href="mailto:juansebastianlarrotta.dev@gmail.com">Contactar por correo</a>
+                    <a class="educ__btn" target="_blank" rel="noopener noreferrer"
+                        href="https://drive.google.com/drive/folders/1-0W_q3vcwwoms1OWBP0gADqEF2GyQDPf?usp=sharing">
+                        Ver certificados
+                    </a>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <hr />
+
+            <div class="footer__icons">
+                <a href="https://github.com/sebastianlarrottadev" target="_blank" rel="noopener noreferrer"
+                    aria-label="Enlace a Github">
+                    <i class="fab fa-github footer__link"></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/juan-sebasti%C3%A1n-larrotta-carre%C3%B1o-790783308?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3BbGBTS0%2FYQbqpMdZqZznTMg%3D%3D"
+                    target="_blank" rel="noopener noreferrer" aria-label="Enlace a Linkedin">
+                    <i class="fab fa-linkedin-in footer__link"></i>
+                </a>
+            </div>
+            <p> © Sebastian Larrotta C.</p>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
